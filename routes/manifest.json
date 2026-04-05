@@ -1,4 +1,19 @@
 {
   "manifestVersion": 1,
-  "routes": []
+  "generatedAt": "2026-04-06T20:00:00Z",
+  "packageName": "RET_NACHTNET",
+  "routes": [
+    {
+      "routeId": "N01",
+      "lineNumber": "N01",
+      "title": "Lijn N01 - Nachtnet RET",
+      "packageName": "RET_NACHTNET",
+      "type": "Regulier",
+      "version": "1.0.0",
+      "fileName": "N01.gpx",
+      "fileUrl": "https://ret-nachtnet-server-production.up.railway.app/routes/N01.gpx",
+      "checksum": "nog_in_te_vullen",
+      "active": true
+    }
+  ]
 }
