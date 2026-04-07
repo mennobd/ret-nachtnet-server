@@ -1,9 +1,10 @@
 {
-  "name": "nachtnet-server",
+  "name": "ret-nachtnet-server",
   "version": "1.0.0",
-  "main": "server.js",
+  "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "generate-manifest": "node scripts/generate-manifest.js"
   },
   "dependencies": {
     "express": "^4.21.2"
