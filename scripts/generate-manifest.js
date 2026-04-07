@@ -58,6 +58,7 @@ function buildManifest() {
       const fullPath = path.join(folderPath, file);
 
       const metadata = parseMetadata(file, folder.type);
+      const checksum = getChecksum(fullPath);
       const clean = file.replace(".gpx", "");
 
       routes.push({
@@ -66,11 +67,11 @@ function buildManifest() {
         title: metadata.title,
         packageName: "RET_NACHTNET",
         type: metadata.type,
-        version: metadata.version,
+        version: `1.0.${checksum.slice(0, 8)}`,
         active: metadata.active,
         fileName: file,
         fileUrl: `${BASE_URL}/${folder.name}/${encodeURIComponent(file)}`,
-        checksum: getChecksum(fullPath)
+        checksum
       });
     });
   });
